@@ -1,0 +1,243 @@
+/**
+ * Panda Casino
+ * Asaf Gilboa.
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+body,html,#mainCont, .row {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#mainCont { 
+    background: url("images/home-btm.jpg");
+    background-size: cover;
+}
+
+#topCont {
+  height: 50%;
+  padding-top: 2%;
+}
+
+#headline {
+  background-color: rgba(216, 204, 186, 0.3);
+  box-shadow: 0 0 8px 6px rgba( 216, 204, 186, 0.3);
+  width: fit-content;
+  padding: 1%;
+  border-radius: 8px;
+  margin-left: 2%;
+  font-size: 3.2vw;
+  cursor: default;
+}
+#headline h1p:hover {
+  text-shadow: 0 0 15px dodgerblue;
+  color: midnightblue;
+}
+
+#bottomCont  { 
+    height: 50%;
+    width: 100%;
+    padding: 0;
+    background: url("images/blacksteel.jpg");
+}
+.centerLine { 
+    background-color: floralwhite;
+    height: 3%;
+    z-index: 2;
+    border-bottom: 10px solid violet;
+    box-shadow: 0 -5px 15px 15px violet inset;
+}
+
+#bottomLeft {
+    font-family: 'Metal Mania', cursive;
+}
+ #bottomMid {
+    font-family: Monoton;
+ }
+#bottomRight {
+    font-family: 'Black Ops One', cursive;
+}
+
+.myDiv {
+    font-size: 4em;
+    margin-top: 11%;
+    position: relative;
+}
+
+#userline, #tokenline {
+    font-size: 2.5vw;
+}
+
+.neonRed a {
+  color: #fff;
+  animation: neon1 1.5s ease-in-out infinite alternate;
+}
+
+.neonBlue a {
+  font-size: 1.5em;
+  color: #228DFF;
+  animation: neon2 1.7s ease-in-out infinite alternate;
+}
+
+.neonYellow a {
+  color: #FFDD1B;
+  animation: neon3 1.6s ease-in-out infinite alternate;
+}
+
+
+.neonGreen {
+  color: #B6FF00;
+  animation: neon4 1.5s ease infinite alternate;
+}
+
+.neonOrange  {
+  color: #FF9900;
+  font-family: Audiowide;
+  animation: neon5 1.5s ease-in-out infinite alternate;
+}
+
+.neonViolet {
+  color: #BA01FF;
+  font-family: 'Ewert';
+  animation: neon6 1.4s ease infinite alternate;
+}
+
+.neonBlue a:hover, .neonYellow a:hover, .neonGreen:hover,  
+.neonOrange:hover, .neonViolet:hover, .neonRed a:hover {
+  animation: none;
+}
+.neonRed a:hover {
+   color: #FF1177;
+}
+
+
+@keyframes neon1 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF1177,
+     0 0 70px #FF1177, 0 0 80px #FF1177, 0 0 100px #FF1177, 0 0 150px #FF1177;
+  }
+   to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF1177,
+     0 0 35px #FF1177, 0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177;
+  }
+}
+
+@keyframes neon2 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228DFF,
+     0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228DFF,
+     0 0 35px #228DFF, 0 0 40px #228DFF, 0 0 50px #228DFF, 0 0 75px #228DFF;
+  }
+}
+
+@keyframes neon3 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FFDD1B,
+     0 0 70px #FFDD1B, 0 0 80px #FFDD1B, 0 0 100px #FFDD1B, 0 0 150px #FFDD1B;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FFDD1B,
+     0 0 35px #FFDD1B, 0 0 40px #FFDD1B, 0 0 50px #FFDD1B, 0 0 75px #FFDD1B;
+  }
+}
+
+@keyframes neon4 {
+  from {
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #B6FF00,
+     0 0 70px #B6FF00, 0 0 80px #B6FF00, 0 0 100px #B6FF00, 0 0 150px #B6FF00;
+  }
+  to {
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #B6FF00,
+     0 0 35px #B6FF00, 0 0 40px #B6FF00, 0 0 50px #B6FF00, 0 0 75px #B6FF00;
+  }
+}
+
+@keyframes neon5 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF9900,
+     0 0 70px #FF9900, 0 0 80px #FF9900, 0 0 100px #FF9900, 0 0 150px #FF9900;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF9900,
+     0 0 35px #FF9900, 0 0 40px #FF9900, 0 0 50px #FF9900, 0 0 75px #FF9900;
+  }
+}
+@keyframes neon5b {
+  from {
+    box-shadow: 0 0 10px or, 0 0 20px orangered, 0 0 30px orangered, 0 0 40px ghostwhite,
+     0 0 70px ghostwhite 0 0 80px ghostwhite, 0 0 100px ghostwhite, 0 0 150px ghostwhite;
+  }
+  to {
+    box-shadow: 0 0 5px orangered, 0 0 10px orangered, 0 0 15px orangered, 0 0 20px ghostwhite,
+     0 0 35px ghostwhite, 0 0 40px ghostwhite, 0 0 50px ghostwhite, 0 0 75px ghostwhite;
+  }
+}
+
+@keyframes neon6 {
+  from {
+    text-shadow: 0 0 10px midnightblue, 0 0 20px midnightblue, 0 0 30px midnightblue, 0 0 40px #ff00de,
+     0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+  }
+  to {
+    text-shadow: 0 0 5px midnightblue, 0 0 10px midnightblue, 0 0 15px midnightblue, 0 0 20px #ff00de,
+     0 0 35px #ff00de, 0 0 40px #ff00de, 0 0 50px #ff00de, 0 0 75px #ff00de;
+  }
+}
+@keyframes neon6b {
+  from {
+    box-shadow: 0 0 10px navajowhite, 0 0 20px navajowhite, 0 0 30px navajowhite, 0 0 40px mediumslateblue,
+     0 0 70px slateblue, 0 0 80px royalblue, 0 0 100px mediumblue, 0 0 150px midnightblue;
+  }
+  to {
+    box-shadow: 0 0 5px navajowhite, 0 0 10px navajowhite, 0 0 15px navajowhite, 0 0 20px midnightblue,
+     0 0 35px mediumblue, 0 0 40px royalblue, 0 0 50px slateblue, 0 0 75px mediumslateblue;
+  }
+}
+
+
+@media (max-width: 1200px) {
+  .gameLink {
+    font-size: 4.5vw;
+  }
+}
+
+@media (max-width: 800px) {
+  #headline {
+    width: 100%;
+    font-size: 6vw;
+  }
+}
+
+@media (max-width: 575px) {
+  .gameLink {
+    font-size: 6vw;
+  }
+  .gameLink a {
+    margin: 1% auto;
+  }
+  #bottomLeft, #bottomMid, #bottomRight {
+    padding: 0;
+    line-height: 2vh;
+  }
+  .row {
+    flex-direction: column;
+  }
+}
