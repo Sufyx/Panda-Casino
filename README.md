@@ -1,6 +1,6 @@
 ## Panda-Casino
 
-![Demo](PandaCasino%20demo.mp4)
+![Demo](Demo.mp4)
 
 A navigation base for several game apps of mine:
 - [Black Jack](https://github.com/Sufyx/Black-Jack)
